@@ -1,0 +1,7 @@
+
+g	java:S112?"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8üÎäì0
+g	java:S112X"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8üÎäì0
+V
+java:S2130 "9Use "Integer.parseInt" for this string-to-int conversion.(°Øñş8ŒÏäì0
+i	java:S100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬µ p8Ïäì0
+o	java:S100C"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê»ÈÒøÿÿÿÿ8‘Ïäì0
