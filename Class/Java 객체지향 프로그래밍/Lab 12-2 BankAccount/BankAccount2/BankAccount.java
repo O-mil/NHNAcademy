@@ -3,7 +3,7 @@ import java.math.BigDecimal;
 public class BankAccount {
     private String accountNumber;
     private String ownerName;
-    private BigDecimal balance;
+    protected BigDecimal balance;
 
     public BankAccount(String ownerName, BigDecimal balance) {
         this.accountNumber = CreateAccount.createAccountNumber();
@@ -29,5 +29,17 @@ public class BankAccount {
         System.out.println("Account Number: " + this.accountNumber);
         System.out.println("Owner Name: " + this.ownerName);
         System.out.println("Balance: " + this.balance.toString());
+    }
+
+    public String getAccountNumber() {
+        return null;
+    }
+
+    public String getOwnerName() {
+        return null;
+    }
+
+    public Object getBalance() {
+        return null;
     }
 }
