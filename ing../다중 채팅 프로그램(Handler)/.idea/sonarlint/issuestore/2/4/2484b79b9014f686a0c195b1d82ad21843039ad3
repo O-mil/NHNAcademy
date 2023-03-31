@@ -1,0 +1,10 @@
+
+Q
+java:S10669"/Merge this if statement with the enclosing one.(€àÕ÷ûÿÿÿÿ8ÑÕ¿©ó0
+N
+java:S1153"1Directly append the argument of String.valueOf().(Ã×ƒª8Îõ±©ó0
+o
+java:S3776 "RRefactor this method to reduce its Cognitive Complexity from 52 to the 15 allowed.(“–ýþ8Ðö±©ó0
+D	java:S108a")Either remove or fill this block of code.(Éò§+8¾Ö¿©ó0
+I
+java:S1874‘",Remove this use of "Date"; it is deprecated.(éÎÍA8Þö±©ó0
