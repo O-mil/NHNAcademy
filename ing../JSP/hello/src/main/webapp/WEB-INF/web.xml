@@ -7,6 +7,14 @@
     <servlet>
         <servlet-name>helloServlet</servlet-name>
         <servlet-class>com.nhnacademy.hello.HelloServlet</servlet-class>
+        <init-param>
+            <param-name>title</param-name>
+            <param-value>Mr.</param-value>
+        </init-param>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>omil</param-value>
+        </init-param>
         <load-on-startup>1</load-on-startup>    <!-- load-on-startup에 0이상의 숫자를 넣으면 was가 실행시켜 준다.-->
     </servlet>
     
@@ -38,5 +46,33 @@
     <servlet-mapping>
         <servlet-name>beautifyServlet</servlet-name>
         <url-pattern>/beautify</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>multiServlet</servlet-name>
+        <servlet-class>com.nhnacademy.hello.MultiServlet</servlet-class>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>multiServlet</servlet-name>
+        <url-pattern>/multi</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>counterServlet</servlet-name>
+        <servlet-class>com.nhnacademy.hello.CounterServlet</servlet-class>
+        <init-param>
+            <param-name>count</param-name>
+            <param-value>100</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>counterServlet</servlet-name>
+        <url-pattern>/counter</url-pattern>
     </servlet-mapping>
 </web-app>
