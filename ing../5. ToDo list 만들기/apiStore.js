@@ -6,7 +6,7 @@ const apiStore = function(){
     const SERVER_URL="http://133.186.144.236:8100";
 
     //user id는 변경해주세요
-    const X_USER_ID = "marco";
+    const X_USER_ID = "omil";
     const DAILY_MAX_TODO_COUNT=8;
     const api = new Object();
 
@@ -29,6 +29,10 @@ const apiStore = function(){
         /*TODO#1-1 해당 날짜에 >=DAILY_MAX_TODO_COUNT 이면 적절한 Error 발생 시키기.
             countByTodoDate(todoDate); 사용해서 등록 count를 구합니다.
         */
+       const count = await countByTodoDate(todoDate);
+       if (count >= DAILY_MAX_TODO_COUNT) {
+            throw new Error("DAILY_MAX_TODO_COUNT 에러");
+       }
 
         /*TODO#1-2  저장구현
 
@@ -49,13 +53,21 @@ const apiStore = function(){
 
         const options = {
             method : 'POST',
-            headers:headers,
+            headers: {
+                'Content-Type': 'application/json',
+                'X-USER-ID': 'omil',
+            },
             body : JSON.stringify(data)
         }
 
         /*TODO#1-3 응답코드가 2xx가 아니다면 적절한 error처리 */
         //참고로 응답코드가 몇번으로 return 되는지 console.log로 남겨서 직접확인해보세요.
 
+        const response = await fetch(url, options);
+        if (!response.ok) {
+            console.log(response.error);
+            throw new Error(response.status);
+        }
     }
 
     /*TODO#2 삭제 구현하기
@@ -64,19 +76,35 @@ const apiStore = function(){
     api.delete = async function(todoDate,id){
         const url = SERVER_URL + "/api/calendar/events/" + id;
         //TODO#2-1 삭제 구현.
+        const options = {
+            method: 'DELETE',
+            headers: headers
+        }
 
         //TODO#2-2 응답코드를 확인해주세요. error발생시 적절하 error처리 해주세요.
-
+        const response = await fetch(url, options);
+        if (!response.ok) {
+            console.log(response.error);
+            throw new Error(response.status);
+        }
     }
 
     /*TODO#3 해당날짜에 해당되는 모든 todo 삭제하기
     */
     api.deleteByTodoDate= async function(todoDate){
         const url = SERVER_URL + "/api/calendar/events/daily/" + todoDate;
-        
+
         //TODO#3-1 삭제 구현하기
+        const options = {
+            method: 'DELETE',
+            headers: headers
+        }
 
         //TODO#3-2 Error 응답이 200번대가 아니라면 적절한 error 처리
+        const response = await fetch(url,options);
+        if(!response.ok){
+            throw new Error(response.status);
+        }
     }
 
     //TODO#4 해당 날짜에 존재하는 모든 todo 조회, 존재하지 않는다면 빈 배열을 리턴합니다.
@@ -90,11 +118,31 @@ const apiStore = function(){
         const url = SERVER_URL + "/api/calendar/events/?year=" + year + "&month=" + month + "&day=" + day;
 
         //TODO#4-1 조회 구현
+        const options = {
+            method: 'GET',
+            headers: headers
+        }
 
         //TODO#4-2 응답 코드를 확인 후 error 처리
-        
+        const response = await fetch(url,options);
+        if(!response.ok){
+            console.log(response.error);
+            throw new Error(response.status);
+        }
 
-        return [];
+        const todoList = await response.json();
+        const items = [];
+        if(todoList){
+            for (const todo of todoList) {
+                const item = {
+                    'id' : todo.id,
+                    'todoDate' : todo.eventAt,
+                    'todoSubject' : todo.subject
+                };
+                items.push(item);
+            }
+        }
+        return items;
     }
 
     //TODO#5 해당 날짜의 모든 todo item count, 참고로 countByTodoDate 함수는 api 내부에서만 접근가능 합니다.
@@ -102,11 +150,16 @@ const apiStore = function(){
         const url = SERVER_URL + "/api/calendar/daily-register-count?date=" + todoDate;
 
         //TODO#5-1 구현
+        const options = {
+            method: 'GET',
+            headers: headers
+        }
 
         //TODO#5-2 응답 코드를 확인 후 error 처리
-
-        return 0;
+        const response = await fetch(url,options);
+        const countObj = await response.json();
+        return parseInt(countObj.count);
     }
-    
+
     return api;
 }

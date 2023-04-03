@@ -1,5 +1,7 @@
 'use strict';
 const navi = new Navigator("btn-prev-month","btn-next-month","btn-current-month");
+//const store = localStorageStore();
+const store = memoryStore();
 console.log("year:" + navi.getYear());
 console.log("month:" + navi.getMonth());
 

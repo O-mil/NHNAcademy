@@ -45,12 +45,11 @@ const memoryStore = function(){
             1. value  존재하지 않는다면 : array를 생성 후 item을 push
             2. value가 존재하면 array에 바로 push ..
         */
-        if (!todoMap.has(todoDate)) {
-            const todoItems = new Array();
-            todoItems.push(item);
-            todoMap.set(todoDate, todoItems);
-        } else {
+        if (todoMap.has(todoDate)){
             const todoItems = todoMap.get(todoDate);
+            todoItems.push(item);
+        } else{
+            const todoItems = new Array();
             todoItems.push(item);
             todoMap.set(todoDate, todoItems);
         }
@@ -123,6 +122,5 @@ const memoryStore = function(){
             console.log(`${key} = ${value}`);
         }
     }
-
     return api;
 }

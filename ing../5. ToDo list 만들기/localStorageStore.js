@@ -43,12 +43,12 @@ const localStorageStore = function(){
             2. value가 존재하면 array에 바로 push ..
         */
        let todoItems = JSON.parse(storage.getItem(todoDate));   //저장하는 것은 똑같은데 storage는 json문자열로 바꿔서 저장해야 함.
-       if (!todoItems) {
+       if(todoItems){
+            todoItems.push(item);
+        }else{
             todoItems = new Array();
             todoItems.push(item);
-       } else {
-            todoItems.push(item);
-       }
+        }
 
         /*TODO#1-4 JSON Serialize...
             todo 1-1 ~ 1-3은 memoryStore.js 했던것과 비슷합니다.
@@ -78,30 +78,48 @@ const localStorageStore = function(){
 
             다만 구현할 때 localStorage에는 json 테스트가 배열로 담겨 있습니다. Json을 객체로 변환하여 삭제를 구현해주세요.
         */
+        const todoItems = JSON.parse(storage.getItem(todoDate));
+        if (todoItems) {
+            const idx = todoItems.findIndex(function(item) {
+                return item.id === id;
+            });
 
+            if (idx > -1) {
+                todoItems.splice(idx, 1);
+                storage.setItem(todoDate, JSON.stringify(todoItems));
+            }
 
-        /*
+            /*
             TODO#2-2 index가 존재하지 않는다면 적절한 Error를 발생해주세요.
             ex) `${id} not found` ..
-        */
+            */
+            else {
+                throw new Error(`${id} 찾을 수 없음`);
+            }
+        }
     }
 
     //TODO#3 해당 날짜에 존재하는 모든 todo 삭제하기
     api.deleteByTodoDate=function(todoDate){
-
+        if (storage.getItem(todoDate)) {
+            storage.removeItem(todoDate);
+        }
     }
 
     //TODO#4 해당 날짜에 존재하는 모든 todo 조회, 존재하지 않는다면 빈 배열을 리턴합니다.
     api.getTodoItemList = function(todoDate){
         //localStorage에서 얻는 값은 json 문자열입니다. 적절히 객체로 변환하여 리턴해주세요
-
-        return [];
+        const todoItems = storage.getItem(todoDate);
+        return todoItems ? JSON.parse(todoItems) : [];
     }
 
     //TODO#5 해당 날짜의 모든 todo item count, 참고로 countByTodoDate 함수는 api 내부에서만 접근가능 합니다.
     function countByTodoDate(todoDate){
+        const todoItems = storage.getItem(todoDate);
+        if (todoItemds) {
+            return JSON.parse(todoItems).length;
+        }
         return 0;
     }
-
     return api;
 }

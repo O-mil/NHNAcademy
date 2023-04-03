@@ -5,10 +5,11 @@
         <title>todo-list</title>
         <link rel="stylesheet" href="./style.css" />
         <script type="text/javascript" src="navigator.js"></script>
+        <!-- <script type="text/javascript" src="todo.js"></script> -->
+        <script type="text/javascript" src="script.js"></script>
         <script type="text/javascript" src="memoryStore.js"></script>
         <script type="text/javascript" src="localStorageStore.js"></script>
         <script type="text/javascript" src="apiStore.js"></script>
-        <!-- <script type="text/javascript" src="todo.js"></script> -->
         <script type="text/javascript" src="todo.api.js"></script>
     </head>
 
@@ -27,9 +28,7 @@
 
         <template id="todo-item-template">
             <div class="todo-item">
-
                 <div class="todo-item-day">1</div>
-
                 <div class="todo-item-form">
                     <form method="post" autocomplete="off" >
                         <p><input type="text" name="todoDate" value="2023-3-13" readonly /> </p>
@@ -39,7 +38,6 @@
                     </form>
                 </div>
 
-
                 <ul class="todo-item-list" >
                     <li>todo-item1</li>
                     <li>todo-item2</li>
@@ -47,9 +45,7 @@
                     <li>todo-item4</li>
                     <li>todo-item5</li>
                 </ul>
-
             </div>
         </template>
-
     </body>
 </html>
