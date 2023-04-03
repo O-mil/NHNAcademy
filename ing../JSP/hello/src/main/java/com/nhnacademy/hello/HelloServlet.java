@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Objects;
 import java.util.logging.Logger;
 
 /**
@@ -21,6 +22,18 @@ public class HelloServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         resp.setCharacterEncoding("UTF-8");     // 한글 깨짐 방지
+
+        String title = getServletConfig().getInitParameter("title");
+        String name = getServletConfig().getInitParameter("name");
+
+        if (Objects.isNull(title)) {
+            title = "Mr.";
+        }
+
+        if (Objects.isNull(name)) {
+            name = "omil";
+        }
+
         try(PrintWriter out = resp.getWriter()) {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
@@ -31,6 +44,7 @@ public class HelloServlet extends HttpServlet {
                 out.println("<body>");
                     out.println("<p>hello servlet!!</p>");
                     out.println("<p>안녕 서블릿!!</p>");
+                    out.println("<p>hello! " + title + " " + name + "</p>");
             out.println("</body>");
             out.println("</html>");
         }
