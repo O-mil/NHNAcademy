@@ -7,21 +7,23 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.logging.Logger;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
-/**
- * @Date 03/04/2023
- */
-public class HelloServlet extends HttpServlet {
+import static com.nhnacademy.hello.HelloServlet.log;
 
-    public static final Logger log = Logger.getLogger(com.nhnacademy.hello.HelloServlet.class.getName());
-    // ~class에서 ~log가 찍혔다고 알려줌.
+public class NowServlet  extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
-        resp.setCharacterEncoding("UTF-8");     // 한글 깨짐 방지
-        try(PrintWriter out = resp.getWriter()) {
+        resp.setCharacterEncoding("UTF-8");
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
+        LocalDateTime localDateTime = LocalDateTime.now();
+        String nowDateTimeString = localDateTime.format(dateTimeFormatter);
+
+        try (PrintWriter out = resp.getWriter()) {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
                 out.println("<head>");
@@ -29,30 +31,18 @@ public class HelloServlet extends HttpServlet {
                     out.println("<title>hello servlet</title>");
                 out.println("</head>");
                 out.println("<body>");
-                    out.println("<p>hello servlet!!</p>");
-                    out.println("<p>안녕 서블릿!!</p>");
-            out.println("</body>");
+                    out.println("<h1>현재 시간</h1>");
+                    out.println("<h1>" + nowDateTimeString + "</h1>");
+                out.println("</body>");
             out.println("</html>");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 
-    //servlet 생성 후 초기화 작업을 위해 호출
     @Override
     public void init(ServletConfig config) throws ServletException {
-        log.info("init()");
+        log.info("before init!");
         super.init(config);
-    }
-
-    @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        log.info("service()");
-        super.service(req, resp);
-    }
-
-
-    @Override
-    public void destroy() {
-        log.info("destory()");
-        super.destroy();
     }
 }
