@@ -1,7 +1,10 @@
 package com.nhnacademy.hello;
 
+import com.nhnacademy.hello.util.CounterUtils;
+
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -25,6 +28,11 @@ public class HelloServlet extends HttpServlet {
 
         String title = getServletConfig().getInitParameter("title");
         String name = getServletConfig().getInitParameter("name");
+        String url = getServletContext().getInitParameter("url");
+        CounterUtils.increaseCounter(getServletContext());
+        long counter = (long) getServletContext().getAttribute("counter");
+        Cookie cookie = new Cookie("userName", "omil");     //쿠키 저장
+        resp.addCookie(cookie);
 
         if (Objects.isNull(title)) {
             title = "Mr.";
@@ -45,6 +53,8 @@ public class HelloServlet extends HttpServlet {
                     out.println("<p>hello servlet!!</p>");
                     out.println("<p>안녕 서블릿!!</p>");
                     out.println("<p>hello! " + title + " " + name + "</p>");
+                    out.println("<p>url: " + url + "</p>");
+                    out.println("<p>counter: " + counter + "</p>");
             out.println("</body>");
             out.println("</html>");
         }

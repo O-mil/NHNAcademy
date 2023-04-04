@@ -1,0 +1,4 @@
+
+g	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òιόÿÿÿÿ8‚ξµ­τ0
+c
+java:S1989,"AHandle the "RuntimeException" thrown here in a "try/catch" block.(Ò‚Òιόÿÿÿÿ8ξµ­τ0

@@ -20,9 +20,11 @@ public class MultiServlet extends HttpServlet {
         resp.setCharacterEncoding("UTF-8");
         req.setCharacterEncoding("UTF-8");
         String[] values = req.getParameterValues("class");
+        String url = getServletContext().getInitParameter("url");
 
         try (PrintWriter out = resp.getWriter()) {
             out.println(String.join(", ", values));
+            out.println("<p>url: " + url + "</p>");
         } catch (IOException e) {
             log.info("MultiServlet Error: " + e.getMessage());
         }
