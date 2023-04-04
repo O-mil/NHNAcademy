@@ -1,5 +1,7 @@
 package com.nhnacademy.hello;
 
+import com.nhnacademy.hello.util.CounterUtils;
+
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -19,6 +21,8 @@ public class NowServlet  extends HttpServlet {
         resp.setContentType("text/html");
         resp.setCharacterEncoding("UTF-8");
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        CounterUtils.increaseCounter(getServletContext());
+        long counter = (long) getServletContext().getAttribute("counter");
 
         LocalDateTime localDateTime = LocalDateTime.now();
         String nowDateTimeString = localDateTime.format(dateTimeFormatter);
@@ -33,7 +37,8 @@ public class NowServlet  extends HttpServlet {
                 out.println("<body>");
                     out.println("<h1>현재 시간</h1>");
                     out.println("<h1>" + nowDateTimeString + "</h1>");
-                out.println("</body>");
+                    out.println("<p>counter: " + counter + "</p>");
+            out.println("</body>");
             out.println("</html>");
         } catch (IOException e) {
             throw new RuntimeException(e);
