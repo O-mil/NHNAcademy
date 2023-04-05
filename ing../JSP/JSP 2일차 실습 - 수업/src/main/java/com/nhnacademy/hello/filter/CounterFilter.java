@@ -4,8 +4,13 @@ import com.nhnacademy.hello.util.CounterUtils;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.*;
+import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 
+@WebFilter(
+        filterName = "countFilter",
+        urlPatterns = "/*"
+        )
 @Slf4j
 public class CounterFilter implements Filter {
     @Override

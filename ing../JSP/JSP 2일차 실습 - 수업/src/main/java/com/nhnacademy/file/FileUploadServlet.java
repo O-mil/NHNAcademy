@@ -1,15 +1,18 @@
-package com.nhnacademy.hello.util;
+package com.nhnacademy.file;
 
 import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import java.io.File;
 import java.io.IOException;
+
+@WebServlet (name = "fileUploadServlet", urlPatterns = "/file/fileUpload")
 
 @MultipartConfig(
 //        fileSizeThreshold   = 1024 * 1024 * 1,  // 1 MB
@@ -47,6 +50,7 @@ public class FileUploadServlet extends HttpServlet {
         for (String token: contentDisposition.split(";")) {
             if (token.trim().startsWith("filename=")) {
                 result = token.trim().replace("filename=", "");
+                result = result.replaceAll("[\"]", "");
                 break;
             }
         }

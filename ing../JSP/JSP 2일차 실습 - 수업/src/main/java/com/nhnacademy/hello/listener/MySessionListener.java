@@ -2,10 +2,12 @@ package com.nhnacademy.hello.listener;
 
 import lombok.extern.slf4j.Slf4j;
 
+import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 import java.util.concurrent.atomic.AtomicInteger;
 
+@WebListener
 @Slf4j
 public class MySessionListener implements HttpSessionListener {
 

@@ -4,6 +4,8 @@ package com.nhnacademy.hello.filter;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.*;
+import javax.servlet.annotation.WebFilter;
+import javax.servlet.annotation.WebInitParam;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -12,6 +14,17 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
+
+//@WebFilter(
+//        filterName = "loginCheckFilter",
+//        urlPatterns = "/*",
+//        initParams = {
+//                @WebInitParam(name = "exclude-urls", value =
+//                        "/login" +
+//                        "/logout" +
+//                        "/login.html" +     // exclude url에 포함되면 세션을 계속해서 리디렉션 돌려서 서버가 브라우저를 차단함.
+//                        "/fileUpload.html") }
+//)
 
 @Slf4j
 public class loginCheckFilter implements Filter {
