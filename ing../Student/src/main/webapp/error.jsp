@@ -11,31 +11,35 @@
 <html>
   <head>
     <title>Error Page</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <table>
       <tbody>
         <tr>
+          <!-- todo status_code 출력 -->
           <th>status_code</th>
-          <td><!-- todo status_code 출력 --></td>
+          <td>${statue_code}</td>
         </tr>
         <tr>
+          <!-- todo exception_type 출력 -->
           <th>exception_type</th>
-          <td><!-- todo exception_type 출력 --></td>
+          <td>${exception_type}</td>
         </tr>
         <tr>
+          <!-- todo message 출력 -->
           <th>message</th>
-          <td><!-- todo message 출력 --></td>
+          <td>${message}</td>
         </tr>
         <tr>
+          <!-- todo exception 출력 -->
           <th>exception</th>
-          <td><!-- todo exception 출력 --></td>
+          <td>${exception}</td>
         </tr>
         <tr>
+          <!-- todo request_uri 출력 -->
           <th>request_uri</th>
-          <td><!-- todo request_uri 출력 --></td>
+          <td>${request_uri}</td>
         </tr>
       </tbody>
     </table>
