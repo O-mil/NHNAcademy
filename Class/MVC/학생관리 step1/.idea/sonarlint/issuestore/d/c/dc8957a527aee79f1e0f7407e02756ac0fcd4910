@@ -1,0 +1,25 @@
+
+g	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(ÓÜ“‡ıÿÿÿÿ8¼ÓÜ¦õ0
+g	java:S112@"FDefine and throw a dedicated exception instead of using a generic one.(ËŠÊÒúÿÿÿÿ8¾ÓÜ¦õ0
+T
+java:S1135"2Complete the task associated to this TODO comment.(ì»Ğøÿÿÿÿ8—ÔÜ¦õ0
+T
+java:S1135 "2Complete the task associated to this TODO comment.(‘ÉĞéıÿÿÿÿ8šÔÜ¦õ0
+c
+java:S1989$"AHandle the "RuntimeException" thrown here in a "try/catch" block.(ÓÜ“‡ıÿÿÿÿ8ÔÜ¦õ0
+O
+java:S1135)"2Complete the task associated to this TODO comment.(ÇÅŞŒ8 ÔÜ¦õ0
+~
+java:S1989+"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ó˜•Ô8¡ÔÜ¦õ0
+T
+java:S11351"2Complete the task associated to this TODO comment.(ñº½÷øÿÿÿÿ8¢ÔÜ¦õ0
+{
+java:S1989<"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ãÔÉøÿÿÿÿ8¥ÔÜ¦õ0
+c
+java:S1989@"AHandle the "RuntimeException" thrown here in a "try/catch" block.(ËŠÊÒúÿÿÿÿ8§ÔÜ¦õ0
+T
+java:S1135C"2Complete the task associated to this TODO comment.(§ˆóÕøÿÿÿÿ8¨ÔÜ¦õ0
+u
+java:S1989H"SHandle the following exception that could be thrown by "sendRedirect": IOException.(Ä£ïŸüÿÿÿÿ8ßŸš©õ0
+T
+java:S1135G"2Complete the task associated to this TODO comment.(çÏŠïüÿÿÿÿ8©ÔÜ¦õ0

@@ -10,6 +10,7 @@
 <html>
     <head>
         <title>학생 리스트</title>
+        <meta charset="UTF-8"/>
         <style>
             table {
                 border: 1px solid;

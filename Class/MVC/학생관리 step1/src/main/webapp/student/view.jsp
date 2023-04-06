@@ -12,6 +12,7 @@
 <html>
   <head>
       <title>학생 조회</title>
+      <meta charset="UTF-8"/>
     <style>
       table {
         border: 1px solid;

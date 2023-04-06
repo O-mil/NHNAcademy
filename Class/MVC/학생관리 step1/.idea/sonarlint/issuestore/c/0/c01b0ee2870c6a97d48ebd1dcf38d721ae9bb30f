@@ -1,0 +1,10 @@
+
+g	java:S1124"FDefine and throw a dedicated exception instead of using a generic one.(§’¹úÿÿÿÿ8„üÊ¨õ0
+~
+java:S1989 "aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ó˜•Ô8•üÊ¨õ0
+{
+java:S19890"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ãÔÉøÿÿÿÿ8—üÊ¨õ0
+c
+java:S19894"AHandle the "RuntimeException" thrown here in a "try/catch" block.(§’¹úÿÿÿÿ8˜üÊ¨õ0
+u
+java:S1989:"SHandle the following exception that could be thrown by "sendRedirect": IOException.(Ä£ïŸüÿÿÿÿ8™üÊ¨õ0

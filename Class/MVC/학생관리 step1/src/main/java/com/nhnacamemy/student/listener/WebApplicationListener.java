@@ -22,8 +22,8 @@ public class WebApplicationListener implements ServletContextListener {
 
         for (int i = 1; i < 11; i++) {
             //... student 1~10 생성하기
-            String id = "학생" + i;
-            String name = "아카데미" + i;
+            String id = "student" + i;
+            String name = "academy" + i;
 
             // 나이: random 처리: 20~30
             int age = new RandomDataGenerator().nextInt(20, 30);
