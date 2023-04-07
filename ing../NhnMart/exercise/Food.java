@@ -1,4 +1,4 @@
-package org.omil;
+package exercise;
 
 public class Food {
     private final String name;

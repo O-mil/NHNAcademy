@@ -1,4 +1,4 @@
-package org.omil;
+package exercise;
 
 import java.util.ArrayList;
 

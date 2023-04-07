@@ -1,4 +1,4 @@
-package org.omil;
+package exercise;
 
 public class Customer {
     // 고객의 구매 목록

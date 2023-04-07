@@ -1,8 +1,8 @@
-package org.omil;
+package exercise;
 
-class MartShell {
+class NhnMartShell {
     public static void main(String[] args) {
-        Mart mart = new Mart();
+        NhnMart mart = new NhnMart();
         mart.prepareMart();
 
         BuyList buyList = inputBuyListFromShell();
@@ -26,7 +26,7 @@ class MartShell {
     }
 }
 
-public class Mart {
+public class NhnMart {
     private final FoodStand foodStand = new FoodStand();
 
     public void prepareMart() {
