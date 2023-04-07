@@ -1,0 +1,7 @@
+
+w
+java:S1450"URemove the "basket" field and declare it as a local variable in the relevant methods.(ó“ÃÖùÿÿÿÿ8¿éËÑõ0
+G
+java:S1068"+Remove this unused "buyList" private field.(ì×–k8ÃéËÑõ0
+L
+java:S1068"*Remove this unused "basket" private field.(ó“ÃÖùÿÿÿÿ8ÄéËÑõ0
