@@ -9,7 +9,7 @@ public class SmsMessageSender implements MessageSender {
     }
 
     public void init() {
-        System.out.println("SMS Message Init!!!--------------------------------------------------");
+        System.out.println("Init--------------------------------------------------");
     }
 
     @Override
