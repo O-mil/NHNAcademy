@@ -21,6 +21,11 @@ public class Main {
             smsMessageSender1.sendMessage(user, "sms Message");
             smsMessageSender2.sendMessage(user, "sms Message");
 
+            System.out.println(emailMessageSender1.hashCode());
+            System.out.println(emailMessageSender2.hashCode());
+
+            System.out.println(smsMessageSender1.hashCode());
+            System.out.println(smsMessageSender2.hashCode());
         }
     }
 }
