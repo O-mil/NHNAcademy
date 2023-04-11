@@ -1,0 +1,20 @@
+
+i
+java:S1192"GDefine a constant instead of duplicating this literal "logger" 3 times.(Õˆßıÿÿÿÿ8Ï„ÿò0
+f
+java:S1192"IDefine a constant instead of duplicating this literal "listener" 3 times.(ÜıÅ8Ï„ÿò0
+e
+java:S1192"HDefine a constant instead of duplicating this literal "logfile" 3 times.(î¸ˆ´8Ñ„ÿò0
+l
+java:S1192%"JDefine a constant instead of duplicating this literal "buildfile" 3 times.(›Ğ“Äıÿÿÿÿ8Ñ„ÿò0
+m	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¬ğ¯8Ò„ÿò0
+n
+java:S1871G"LThis branch's code block is the same as the block for the branch on line 59.(Ñà·„øÿÿÿÿ8„ÿò0
+i
+java:S1871>"LThis branch's code block is the same as the block for the branch on line 59.(»ÇÅ8„ÿò0
+n
+java:S1871J"LThis branch's code block is the same as the block for the branch on line 59.(©æŠúÿÿÿÿ8„ÿò0
+i
+java:S1871D"LThis branch's code block is the same as the block for the branch on line 59.(Şß¼œ8„ÿò0
+i
+java:S1871A"LThis branch's code block is the same as the block for the branch on line 59.(¿¨¯­8„ÿò0

@@ -1,0 +1,8 @@
+
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8õÅ¸´í0
+]	java:S125+"<This block of commented-out lines of code should be removed.(ï›±ƒÿÿÿÿÿ8»ÇÁ´í0
+E	java:S108:")Either remove or fill this block of code.(é¢¦é8ÆÆ¸´í0
+X	java:S125L"<This block of commented-out lines of code should be removed.(Ú¸È8ÛáÀ´í0
+L
+java:S1068
+"*Remove this unused "socket" private field.(Å’¬Úşÿÿÿÿ8ÉÆ¸´í0
