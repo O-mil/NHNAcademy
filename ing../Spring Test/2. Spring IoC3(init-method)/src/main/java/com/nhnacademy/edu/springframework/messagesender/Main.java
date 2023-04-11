@@ -17,7 +17,7 @@ public class Main {
             User user = new User("ghkwjd5343@gmail.com", "010.5883.6775");
             emailMessageSender1.sendMessage(user, "email Message");
             emailMessageSender2.sendMessage(user, "email Message");
-
+            System.out.println("-------------------------------------------------------");
             smsMessageSender1.sendMessage(user, "sms Message");
             smsMessageSender2.sendMessage(user, "sms Message");
 

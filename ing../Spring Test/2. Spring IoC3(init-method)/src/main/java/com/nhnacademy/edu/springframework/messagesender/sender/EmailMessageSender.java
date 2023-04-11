@@ -9,7 +9,7 @@ public class EmailMessageSender implements MessageSender {
     }
 
     public void init() {
-        System.out.println("email Message Init!!!--------------------------------------------------");
+        System.out.println("Init--------------------------------------------------");
     }
     @Override
     public void sendMessage(User user, String message) {
