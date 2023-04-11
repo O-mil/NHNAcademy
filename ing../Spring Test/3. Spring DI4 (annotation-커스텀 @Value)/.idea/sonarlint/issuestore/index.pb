@@ -1,10 +1,14 @@
 
-ˆ
-Xsrc/main/java/com/nhnacademy/edu/springframework/messagesender/sender/MessageSender.java,a/8/a843cedc3cf217d9696395bd68ceb8fb20320a63
-x
-Hsrc/main/java/com/nhnacademy/edu/springframework/messagesender/Main.java,2/d/2dcdd85aba57efe759349034392cbbc324113662
 W
 'src/main/resources/messaging.properties,2/a/2adc94896c2314c44d068ad450142254c10b3602
+
+]src/main/java/com/nhnacademy/edu/springframework/messagesender/sender/EmailMessageSender.java,3/3/33e57e18d7ed84968a7e55023f1ed15b8101a722
+ˆ
+Xsrc/main/java/com/nhnacademy/edu/springframework/messagesender/sender/MessageSender.java,a/8/a843cedc3cf217d9696395bd68ceb8fb20320a63
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+x
+Hsrc/main/java/com/nhnacademy/edu/springframework/messagesender/Main.java,2/d/2dcdd85aba57efe759349034392cbbc324113662
 ‹
 [src/main/java/com/nhnacademy/edu/springframework/messagesender/sender/SmsMessageSender.java,1/0/103c6956c94934701fda1cff49af9df3b3c7f239
 x
