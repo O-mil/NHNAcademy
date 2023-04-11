@@ -1,7 +1,6 @@
 package com.nhnacademy.edu.springframework.messagesender;
 
 import com.nhnacademy.edu.springframework.messagesender.sender.EmailMessageSender;
-import com.nhnacademy.edu.springframework.messagesender.sender.MessageSendService;
 import com.nhnacademy.edu.springframework.messagesender.sender.SmsMessageSender;
 
 public class Main {

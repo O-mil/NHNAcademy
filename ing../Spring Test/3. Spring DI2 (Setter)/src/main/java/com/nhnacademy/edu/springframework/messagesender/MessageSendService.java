@@ -19,7 +19,7 @@ public class MessageSendService {
     }
 
     public void doSendMessage() {
-        User user = new User("ghkwjd5343@gmail.com", "010-5883-6775");
+        User user = new User("hey@naver.com", "010.1234.5678");
         messageSender.sendMessage(user,   "hi");
     }
 }
