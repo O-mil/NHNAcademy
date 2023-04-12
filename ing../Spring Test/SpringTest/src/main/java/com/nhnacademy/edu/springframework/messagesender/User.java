@@ -17,4 +17,11 @@ public class User {
     public String getPhoneNumber() {
         return phoneNumber;
     }
+
+    @Override
+    public String toString() {
+        return "내 정보 {" +
+                "email: " + email +
+                ", phone: " + phoneNumber + "}";
+    }
 }

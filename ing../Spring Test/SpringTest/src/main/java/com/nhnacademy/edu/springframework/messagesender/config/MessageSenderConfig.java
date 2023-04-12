@@ -1,22 +1,23 @@
 package com.nhnacademy.edu.springframework.messagesender.config;
 
+import com.nhnacademy.edu.springframework.messagesender.User;
 import com.nhnacademy.edu.springframework.messagesender.sender.EmailMessageSender;
 import com.nhnacademy.edu.springframework.messagesender.sender.MessageSender;
 import com.nhnacademy.edu.springframework.messagesender.sender.SmsMessageSender;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.*;
 
 
 @Configuration
 @ComponentScan(basePackages = "com.nhnacademy.edu.springframework.messagesender")
+@EnableAspectJAutoProxy(proxyTargetClass = true)
 public class MessageSenderConfig {
-    @Bean(initMethod = "init")
+
+    @Bean
     public MessageSender smsMessageSender() {
         return new SmsMessageSender();
     }
 
-    @Bean(initMethod = "init")
+    @Bean
     public MessageSender emailMessageSender() {
         return new EmailMessageSender();
     }
