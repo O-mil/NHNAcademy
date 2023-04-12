@@ -1,0 +1,36 @@
+
+
+Java Config
+
+- @Bean + @Configuration
+    - Wiring
+        - Method reference
+        - Argument reference
+        - JavaConfig Injection
+- @Component + ComponentsScan
+    - @Component
+        - @Controller
+        - @Service
+        - @Repository
+- Wiring
+    - @Autowired + @Qualifier
+    - Injection
+        - Setter
+        - Conctructor (추천)
+        - Field Injection
+- Lifecycle
+    - @PostConstruct, @PreDestroy
+    - BeanPostProcessor
+    - Initializingbean, Disposablebean interface
+- 언제 @Bean 을 사용하고 어떨때 stereo type annotation 을 사용하는가?
+    - @Bean
+        - EmailSender
+        - ThreadPool, DbPool, ConnectionPool, HttpClient
+        - BeanPostProcessor
+        - HandlerMethodArgumentResolver (Spring MVC)
+    - Stereo type annotations
+        - 비지니스 로직
+- 그럼 모든 자바 클래스는 스프링 빈으로 만들어야 하나?
+    - 그렇진 않다.
+    - DI 할 때상이 스프링 빈이어야 한다.
+    - 비지니스 대상이 스프링 빈이어야 한다. (의존성 문제)
