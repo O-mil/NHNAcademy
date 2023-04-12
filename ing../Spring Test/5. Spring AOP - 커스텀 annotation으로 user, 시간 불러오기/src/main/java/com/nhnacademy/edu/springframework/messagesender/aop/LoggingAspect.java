@@ -4,7 +4,6 @@ import com.nhnacademy.edu.springframework.messagesender.User;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.weaver.ast.Test;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StopWatch;
 
@@ -14,7 +13,7 @@ import org.springframework.util.StopWatch;
 public class LoggingAspect {
 
     //execution(public * *.sendMessage(..)) && args(user, ..)
-    @Around("@annotation(TestAnnotation) && args(user, ..)")
+    @Around("@annotation(TestAnnotation) && args(user, ..)")        // arg를 부르려면 argument가 있는 메서드에 커스텀 annotation을 해줘야 함.
     public Object loggingExecutionTime(ProceedingJoinPoint pjp, User user) throws Throwable {
 
         StopWatch stopWatch = new StopWatch();
