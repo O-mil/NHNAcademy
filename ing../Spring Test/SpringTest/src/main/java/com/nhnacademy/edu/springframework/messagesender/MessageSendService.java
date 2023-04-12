@@ -1,5 +1,6 @@
 package com.nhnacademy.edu.springframework.messagesender;
 
+import com.nhnacademy.edu.springframework.messagesender.aop.TestAnnotation;
 import com.nhnacademy.edu.springframework.messagesender.sender.MessageSender;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -20,13 +21,15 @@ public class MessageSendService {
 
     @Autowired
     public MessageSendService(@Qualifier("smsMessageSender") MessageSender messageSender) {
-        System.out.println("MessageSender invoked!");
+//        System.out.println("MessageSender invoked!");
         this.messageSender = messageSender;
     }
+
 
 
     public void doSendMessage() {
         User user = new User("hey@naver.com", "010.1234.5678");
         messageSender.sendMessage(user,   "hi! " + name);
+
     }
 }

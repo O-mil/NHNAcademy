@@ -11,6 +11,5 @@ public class SmsMessageSender implements MessageSender {
     @Override
     public void sendMessage(User user, String Message) {
         System.out.println("SMS Message Sent to " + user.getPhoneNumber() + " : " + Message);
-
     }
 }
