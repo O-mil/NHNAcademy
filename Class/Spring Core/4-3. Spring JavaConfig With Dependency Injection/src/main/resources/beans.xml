@@ -7,6 +7,7 @@
 
     <!-- annotation설정을 위해 추가-->
     <context:annotation-config />
+
     <context:property-placeholder location="classpath:messaging.properties" />
 
     <!-- @Required 애너테이션 사용을 위해 추가 -->

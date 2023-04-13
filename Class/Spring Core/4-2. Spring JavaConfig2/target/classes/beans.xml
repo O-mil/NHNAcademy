@@ -6,28 +6,28 @@
 
 
     <!-- annotation설정을 위해 추가-->
-    <context:annotation-config />
-    <context:property-placeholder location="classpath:messaging.properties" />
+<!--    <context:annotation-config />-->
+<!--    <context:property-placeholder location="classpath:messaging.properties" />-->
 
     <!-- @Required 애너테이션 사용을 위해 추가 -->
-    <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor" />
+<!--    <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor" />-->
 
 <!--    <bean id="beanProcessor" class = "com.nhnacademy.edu.springframework.messagesender.sender.BeanProcessor"></bean>-->
 
 <!--    <bean id="emailMessageSender" class = "com.nhnacademy.edu.springframework.messagesender.sender.EmailMessageSender" scope="singleton"></bean>-->
 <!--    <bean id="smsMessageSender" class = "com.nhnacademy.edu.springframework.messagesender.sender.SmsMessageSender" scope="prototype"></bean>-->
 
-    <bean id="emailMessageSender" class = "com.nhnacademy.edu.springframework.messagesender.sender.EmailMessageSender" scope="singleton">
-        <qualifier type="org.springframework.beans.factory.annotation.Qualifier">
-        </qualifier>
-    </bean>
+<!--    <bean id="emailMessageSender" class = "com.nhnacademy.edu.springframework.messagesender.sender.EmailMessageSender" scope="singleton">-->
+<!--        <qualifier type="org.springframework.beans.factory.annotation.Qualifier">-->
+<!--        </qualifier>-->
+<!--    </bean>-->
 
-    <bean id="smsMessageSender" class = "com.nhnacademy.edu.springframework.messagesender.sender.SmsMessageSender" scope="prototype" primary="true">
-        <qualifier type="org.springframework.beans.factory.annotation.Qualifier">
-        </qualifier>
-    </bean>
+<!--    <bean id="smsMessageSender" class = "com.nhnacademy.edu.springframework.messagesender.sender.SmsMessageSender" scope="prototype" primary="true">-->
+<!--        <qualifier type="org.springframework.beans.factory.annotation.Qualifier">-->
+<!--        </qualifier>-->
+<!--    </bean>-->
 
 
-    <bean id = "messageSendService" class="com.nhnacademy.edu.springframework.messagesender.MessageSendService"></bean>
+<!--    <bean id = "messageSendService" class="com.nhnacademy.edu.springframework.messagesender.MessageSendService"></bean>-->
 
 </beans>
