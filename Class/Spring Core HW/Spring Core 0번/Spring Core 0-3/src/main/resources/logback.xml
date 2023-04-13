@@ -1,0 +1,16 @@
+<configuration>
+
+    <appender name="LOGBACK" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %class{0}.%method :  %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- turn OFF all logging (children can override) -->
+    <root level="info">
+        <appender-ref ref="LOGBACK" />
+    </root>
+
+</configuration>
