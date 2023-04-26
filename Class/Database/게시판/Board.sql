@@ -1,5 +1,5 @@
--- Create Database 김화정_Board;
-use 김화정_Board;
+-- Create Database Board;
+use Board;
 
 drop table IF EXISTS View;
 drop table IF EXISTS Comment;
