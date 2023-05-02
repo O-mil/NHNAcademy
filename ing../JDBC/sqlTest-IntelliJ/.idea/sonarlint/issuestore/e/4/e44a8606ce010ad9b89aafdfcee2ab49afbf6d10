@@ -1,0 +1,8 @@
+
+i
+java:S2095
+"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ8åÀ­ı0
+j
+java:S2095	"HUse try-with-resources or close this "Connection" in a "finally" clause.(  ´Ôıÿÿÿÿ8æÀ­ı0
+X
+java:S6437	"6Revoke and change this password, as it is compromised.(  ´Ôıÿÿÿÿ8éÀ­ı0
