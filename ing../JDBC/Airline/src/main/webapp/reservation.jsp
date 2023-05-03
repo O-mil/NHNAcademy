@@ -38,7 +38,7 @@
                     while (result.next()) { %>
 
             <tr>
-                <td><a href="reservation.jsp?id=<%=result.getInt(1)%>"><%=result.getInt(1)%></a></td>
+                <td><a href="flight.jsp?id=<%=result.getInt(1)%>"><%=result.getInt(1)%></a></td>
                 <td><%=result.getInt(2)%></td>
                 <td><%=String.valueOf(result.getDate(3))%></td>
             </tr>
