@@ -19,39 +19,40 @@
             </thead>
             <tbody>
                 <%
-                    int pageNo = 1;
+                    int pageNo;
                     int pageSize = 20;  //한 페이지에 출력할 행의 개수
-                    String pageParam = request.getParameter("pageNo");
+                    String pageParam = request.getParameter("page");
                     DataSource dataSource = DbUtils.getDataSource();
                     int startPage = 0;  //limit의 시작값
 
-                    PreparedStatement statement = null;
-                    ResultSet result = null;
 
-                    if (pageParam != null && !pageParam.isEmpty()) {
+                    if (pageParam != null) {
                         pageNo = Integer.parseInt(pageParam);
+                    } else {
+                        pageNo = 1;
                     }
 
+
+                    String countSql = "SELECT COUNT(*) FROM Members";
 
                     try (Connection connection = dataSource.getConnection()){
 
                         // 전체 데이터 개수 조회
                         Statement countPstmt = connection.createStatement();
-                        String countSql = "SELECT COUNT(*) FROM Members";
                         ResultSet countRs = countPstmt.executeQuery(countSql);
                         countRs.next();
                         int totalCount = countRs.getInt(1);
 
-                        // 페이지 개수 계산
-                        int pageCount = (int) Math.ceil((double) totalCount / pageSize);
-
                         // ----------
                         String SQL = "SELECT * FROM Members limit ?, ?";
+                        PreparedStatement statement = connection.prepareStatement(SQL);
                         int startRow = (pageNo - 1) * pageSize;
-                        statement = connection.prepareStatement(SQL);
                         statement.setInt(1, startRow);
                         statement.setInt(2, pageSize);
-                        result = statement.executeQuery();
+                        ResultSet result = statement.executeQuery();
+
+                        // 페이지 개수 계산
+                        int pageCount = totalCount / pageSize;
 
                         while (result.next()) { %>
 
