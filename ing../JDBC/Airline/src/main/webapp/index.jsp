@@ -27,16 +27,16 @@
 
         try (Connection connection = dataSource.getConnection()){
             statement = connection.createStatement();
-            String sqlQuery = "SELECT * FROM Flight";
+            String sqlQuery = "SELECT * FROM Passenger";
             result = statement.executeQuery(sqlQuery);
 
             while (result.next()) { %>
 
     <tr>
         <td><a href="reservation.jsp?id=<%=result.getInt(1)%>"><%=result.getInt(1)%></a></td>
-        <td><%=result.getInt(2)%></td>
-        <td><%=result.getString(3)%></td>
-        <td><%=result.getString(4)%></td>
+        <td><%=result.getString(2)%></td>
+        <td><%=result.getInt(3)%></td>
+        <td><%=result.getInt(4)%></td>
     </tr>
     <%
             }
