@@ -1,0 +1,14 @@
+
+q
+java:S1192:"VDefine a constant instead of duplicating this literal "redirect:/user?page=1" 3 times.(Áæ³Íýÿÿÿÿ
+Ž
+java:S11308"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ôßÊàøÿÿÿÿ8ë¡âÙÿ0
+‰
+java:S1130Q"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(û¶«ò8î¡âÙÿ0
+n
+java:S1128
+"LRemove this unused import 'org.springframework.web.multipart.MultipartFile'.(ôŸœžÿÿÿÿÿ8î¡âÙÿ0
+M
+java:S1128"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8î¡âÙÿ0
+K
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8î¡âÙÿ0
