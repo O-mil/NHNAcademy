@@ -7,3 +7,5 @@
 - 웹 요청 ACL 스프링 표현식 적용하기
 - 로그인/로그아웃 페이지 Thymeleaf 이용해서 커스터마이징
 - Spring Security JSP Taglib 사용
+
+- github OAuth2 로그인 추가
