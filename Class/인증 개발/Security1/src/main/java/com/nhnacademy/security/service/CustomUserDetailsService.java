@@ -23,7 +23,6 @@ public class CustomUserDetailsService implements UserDetailsService {
         Member member = memberRepository.findById(username)
             .orElseThrow(() -> new UsernameNotFoundException(username + " not found"));
 
-        return new User(member.getId(), member.getPwd(),
-            Collections.singletonList(new SimpleGrantedAuthority(member.getAuthority().getAuthority())));
+        return new User(member.getId(), member.getPwd(), Collections.singletonList(new SimpleGrantedAuthority(member.getAuthority().getAuthority())));
     }
 }
