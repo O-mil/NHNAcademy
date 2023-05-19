@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="security:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9fbce703-11cf-42b1-9eff-53f53a22c506" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Security1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/member.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/Base.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/SecurityInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/WebAppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/config/JpaConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/config/RootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/controller/ControllerBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/controller/LogoutController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/controller/MemberRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/domain/MemberCreateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/domain/MemberId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/entity/Authority.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/entity/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/repository/MemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/repository/RepositoryBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/service/CustomUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/service/MemberService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/java/com/nhnacademy/security/util/PasswordUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/resources/messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/resources/messages_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/resources/messages_ko.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/resources/script/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/webapp/WEB-INF/view/admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/webapp/WEB-INF/view/error403.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/webapp/WEB-INF/view/fragments/heading.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/webapp/WEB-INF/view/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/webapp/WEB-INF/view/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/webapp/WEB-INF/view/logout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/webapp/WEB-INF/view/private-project.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/main/webapp/WEB-INF/view/project.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Security1/src/test/java/com/nhnacademy/security/util/PasswordUtilsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ing../JDBC/Todo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ing../JDBC/Todo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ing../JPA/academy-spring-jpa" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ing../JPA/academy-spring-jpa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ing../Security" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ing../Security" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ing../Security1/Security" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ing../Security1/Security" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ing../student/student-step" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ing../student/student-step" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../../.." value="Login" />
+        <entry key="$PROJECT_DIR$" value="oauth2" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Pp0tABggPxnjSipoVyRL1x4Wi3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TODO_SCOPE": "All Places",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/kimhwajeong/Code/GitHub/NHNAcademy/Class/인증 개발/Security",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "e91e6348157868de9dd8b25c81aebfb9",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.73">
+    <configuration name="member | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/member.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="member | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/member.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="member | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/member.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="PasswordUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="security" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhnacademy.security.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhnacademy.security.util" />
+      <option name="MAIN_CLASS_NAME" value="com.nhnacademy.security.util.PasswordUtilsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Security" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Security" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.73" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.73" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="security:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="fd46b625-1425-465a-ae19-359352a922fa" />
+        <option name="HTTP_PORT" value="9090" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54843" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="security:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.member | #2" />
+      <item itemvalue="HTTP Request.member | #3" />
+      <item itemvalue="HTTP Request.member | #1" />
+      <item itemvalue="JUnit.PasswordUtilsTest" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.73" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.member | #1" />
+        <item itemvalue="JUnit.PasswordUtilsTest" />
+        <item itemvalue="HTTP Request.member | #1" />
+        <item itemvalue="HTTP Request.member | #3" />
+        <item itemvalue="HTTP Request.member | #2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9fbce703-11cf-42b1-9eff-53f53a22c506" name="Changes" comment="" />
+      <created>1684138927985</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684138927985</updated>
+      <workItem from="1684138929427" duration="1041000" />
+      <workItem from="1684195694386" duration="625000" />
+      <workItem from="1684196661496" duration="9000" />
+      <workItem from="1684197059811" duration="3548000" />
+      <workItem from="1684368616276" duration="4249000" />
+      <workItem from="1684373461248" duration="387000" />
+      <workItem from="1684373881261" duration="73000" />
+      <workItem from="1684374616400" duration="6243000" />
+      <workItem from="1684384585410" duration="676000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="05e070f5-9e56-4736-976a-a907f17c7847" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../JSP/JSP 2일차 실습 - 수업/src/main/java/com/nhnacademy/hello/Listener/MyServletContextListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/JSP 2일차 실습 - 수업/src/main/resources/counter.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSP/JSP 2일차 실습 - 수업/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JSP/JSP 2일차 실습 - 수업/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSP/JSP 2일차 실습 - 수업/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JSP/JSP 2일차 실습 - 수업/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSP/JSP 2일차 실습 - 수업/target/classes/com/nhnacademy/hello/login/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JSP/JSP 2일차 실습 - 수업/target/classes/com/nhnacademy/hello/login/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSP/JSP 2일차 실습 - 수업/target/hello-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/hello/login/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JSP/JSP 2일차 실습 - 수업/target/hello-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/hello/login/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSP/JSP 2일차 실습 - 수업/target/hello-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JSP/JSP 2일차 실습 - 수업/target/hello-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NhnMart.java" beforeDir="false" afterPath="$PROJECT_DIR$/NhnMart.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NuWeajd2zGghCIONM2v0BCEthb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/kimhwajeong/Code/GitHub/NHNAcademy/ing../Mart",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05e070f5-9e56-4736-976a-a907f17c7847" name="Changes" comment="" />
+      <created>1680514543735</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680514543735</updated>
+      <workItem from="1680514544755" duration="49000" />
+      <workItem from="1680581016841" duration="118000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

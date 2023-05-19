@@ -1,0 +1,5 @@
+com/nhnacademy/board/controller/login/LoginControllerTest.class
+com/nhnacademy/board/controller/admin/AdminControllerTest.class
+com/nhnacademy/board/service/PostServiceTest.class
+com/nhnacademy/board/controller/user/PostControllerTest.class
+com/nhnacademy/board/service/UserServiceTest.class

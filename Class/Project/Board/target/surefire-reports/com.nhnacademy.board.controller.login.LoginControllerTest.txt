@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.nhnacademy.board.controller.login.LoginControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.216 s <<< FAILURE! - in com.nhnacademy.board.controller.login.LoginControllerTest
+loginFail  Time elapsed: 1.175 s  <<< FAILURE!
+java.lang.AssertionError: Redirected URL expected:</login> but was:<null>
+	at com.nhnacademy.board.controller.login.LoginControllerTest.loginFail(LoginControllerTest.java:116)
+
+loginForm  Time elapsed: 0.013 s  <<< FAILURE!
+java.lang.AssertionError: Redirected URL expected:</post?page=1> but was:<null>
+	at com.nhnacademy.board.controller.login.LoginControllerTest.loginForm(LoginControllerTest.java:95)
+

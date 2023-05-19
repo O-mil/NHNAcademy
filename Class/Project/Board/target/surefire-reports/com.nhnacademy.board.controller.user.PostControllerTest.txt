@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.nhnacademy.board.controller.user.PostControllerTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.nhnacademy.board.controller.user.PostControllerTest

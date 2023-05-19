@@ -1,0 +1,58 @@
+POST http://localhost:9090/members
+Host: localhost:9090
+Content-Type: application/json
+Content-Length: 93
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=1EA26E06F33366BB616184817961AAFC
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": "admin",
+  "name": "Administrator",
+  "pwd": "admin",
+  "authority": "ROLE_ADMIN"
+}
+
+<> 2023-05-18T091609.200.json
+
+###
+
+POST http://localhost:9090/members
+Host: localhost:9090
+Content-Type: application/json
+Content-Length: 93
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": "admin",
+  "name": "Administrator",
+  "pwd": "admin",
+  "authority": "ROLE_ADMIN"
+}
+
+<> 2023-05-18T091505.405.html
+
+###
+
+POST http://localhost:8080/members
+Host: localhost:8080
+Content-Type: application/json
+Content-Length: 93
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": "admin",
+  "name": "Administrator",
+  "pwd": "admin",
+  "authority": "ROLE_ADMIN"
+}
+
+<> 2023-05-18T091458.404.html
+
+###
+
