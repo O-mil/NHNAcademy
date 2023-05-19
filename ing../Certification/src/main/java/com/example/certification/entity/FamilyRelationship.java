@@ -17,6 +17,11 @@ public class FamilyRelationship {
     @EmbeddedId
     private Pk pk;
 
+    @MapsId("baseResidentSerialNumber")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "base_resident_serial_number")
+    private Resident resident;
+
     @Column(name = "family_relationship_code")
     private String familyRelationshipCode;
 

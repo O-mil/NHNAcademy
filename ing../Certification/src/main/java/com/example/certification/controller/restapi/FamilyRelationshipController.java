@@ -2,10 +2,9 @@ package com.example.certification.controller.restapi;
 
 
 import lombok.RequiredArgsConstructor;
-import org.example.domain.FamilyRelationModifyDTO;
-import org.example.domain.FamilyRelationshipDTO;
-import org.example.domain.FamilyRelationshipReportDTO;
-import org.example.service.FamilyRelationshipService;
+import com.example.certification.domain.FamilyRelationModifyDTO;
+import com.example.certification.domain.FamilyRelationshipDTO;
+import com.example.certification.service.FamilyRelationshipService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +16,7 @@ public class FamilyRelationshipController {
     private final FamilyRelationshipService familyRelationshipService;
 
     @PostMapping
-    public ResponseEntity<FamilyRelationshipReportDTO> registRelation(@PathVariable(name="serialNumber")Long serialNumber, @RequestBody FamilyRelationshipDTO familyRelationshipDTO) {
+    public ResponseEntity<FamilyRelationshipDTO> registRelation(@PathVariable(name="serialNumber")Long serialNumber, @RequestBody FamilyRelationshipDTO familyRelationshipDTO) {
         FamilyRelationshipDTO res = familyRelationshipService.registerFamilyRelationship(serialNumber, familyRelationshipDTO);
         return ResponseEntity.ok(res);
     }

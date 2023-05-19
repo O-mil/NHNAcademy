@@ -1,6 +1,6 @@
 package com.example.certification.repository;
 
-import org.example.entity.Household;
+import com.example.certification.entity.Household;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

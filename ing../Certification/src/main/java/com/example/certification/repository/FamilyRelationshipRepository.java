@@ -1,7 +1,7 @@
 package com.example.certification.repository;
 
-import org.example.domain.FamilyRelationshipDTO;
-import org.example.entity.FamilyRelationship;
+import com.example.certification.domain.FamilyRelationshipDTO;
+import com.example.certification.entity.FamilyRelationship;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

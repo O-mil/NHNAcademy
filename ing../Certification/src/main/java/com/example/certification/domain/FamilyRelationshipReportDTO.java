@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import org.example.entity.Resident;
+import com.example.certification.entity.Resident;
 
 @ToString
 @Getter

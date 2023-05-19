@@ -1,8 +1,8 @@
 package com.example.certification.advice;
 
 import lombok.extern.slf4j.Slf4j;
-import org.example.exception.NotExistCertificateException;
-import org.example.exception.NotFoundResidentException;
+import com.example.certification.exception.NotExistCertificateException;
+import com.example.certification.exception.NotFoundResidentException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;

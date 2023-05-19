@@ -2,10 +2,10 @@ package com.example.certification.controller.restapi;
 
 
 import lombok.RequiredArgsConstructor;
-import org.example.domain.ResidentModifyDTO;
-import org.example.domain.ResidentRegisterDTO;
-import org.example.entity.Resident;
-import org.example.service.ResidentService;
+import com.example.certification.domain.ResidentModifyDTO;
+import com.example.certification.domain.ResidentRegisterDTO;
+import com.example.certification.entity.Resident;
+import com.example.certification.service.ResidentService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

@@ -1,8 +1,10 @@
 package com.example.certification.repository;
 
+import com.example.certification.entity.QCertificateIssue;
+import com.example.certification.entity.QResident;
 import com.querydsl.core.types.Projections;
-import org.example.domain.CertificateIssueDTO;
-import org.example.entity.CertificateIssue;
+import com.example.certification.domain.CertificateIssueDTO;
+import com.example.certification.entity.CertificateIssue;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
 
 public class CertificateIssueRepositoryImpl extends QuerydslRepositorySupport implements CertificateIssueRepositoryCustom {
