@@ -1,6 +1,6 @@
 package com.example.certification.repository;
 
-import org.example.domain.CertificateIssueDTO;
+import com.example.certification.domain.CertificateIssueDTO;
 import org.springframework.data.repository.NoRepositoryBean;
 
 @NoRepositoryBean

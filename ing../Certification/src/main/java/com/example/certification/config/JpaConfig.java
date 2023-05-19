@@ -1,6 +1,6 @@
 package com.example.certification.config;
 
-import org.example.repository.RepositoryBase;
+import com.example.certification.repository.RepositoryBase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -23,7 +23,7 @@ public class JpaConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource) {
         LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
         emf.setDataSource(dataSource);
-        emf.setPackagesToScan("com.nhnacademy.familycertification.entity");
+        emf.setPackagesToScan("com.example.certification.entity");
         emf.setJpaVendorAdapter(jpaVendorAdapters());
         emf.setJpaProperties(jpaProperties());
 

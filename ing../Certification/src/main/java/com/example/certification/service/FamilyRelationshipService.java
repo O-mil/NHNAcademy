@@ -1,13 +1,13 @@
 package com.example.certification.service;
 
 import lombok.RequiredArgsConstructor;
-import org.example.domain.FamilyRelationModifyDTO;
-import org.example.domain.FamilyRelationshipDTO;
-import org.example.entity.FamilyRelationship;
-import org.example.entity.Resident;
-import org.example.exception.NotFoundResidentException;
-import org.example.repository.FamilyRelationshipRepository;
-import org.example.repository.ResidentRepository;
+import com.example.certification.domain.FamilyRelationModifyDTO;
+import com.example.certification.domain.FamilyRelationshipDTO;
+import com.example.certification.entity.FamilyRelationship;
+import com.example.certification.entity.Resident;
+import com.example.certification.exception.NotFoundResidentException;
+import com.example.certification.repository.FamilyRelationshipRepository;
+import com.example.certification.repository.ResidentRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -3,7 +3,7 @@ package com.example.certification.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
-import org.example.controller.ControllerBase;
+import com.example.certification.controller.ControllerBase;
 import org.springframework.beans.BeansException;
 import org.springframework.context.*;
 import org.springframework.context.annotation.Bean;

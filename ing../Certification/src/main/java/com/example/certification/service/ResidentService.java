@@ -2,12 +2,11 @@ package com.example.certification.service;
 
 
 import lombok.RequiredArgsConstructor;
-import org.example.domain.ResidentModifyDTO;
-import org.example.domain.ResidentRegisterDTO;
-import org.example.entity.Resident;
-import org.example.exception.NotFoundResidentException;
-import org.example.repository.ResidentRepository;
-import org.hibernate.annotations.NotFound;
+import com.example.certification.domain.ResidentModifyDTO;
+import com.example.certification.domain.ResidentRegisterDTO;
+import com.example.certification.entity.Resident;
+import com.example.certification.exception.NotFoundResidentException;
+import com.example.certification.repository.ResidentRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;

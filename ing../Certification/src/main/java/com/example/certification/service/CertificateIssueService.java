@@ -2,8 +2,8 @@ package com.example.certification.service;
 
 
 import lombok.RequiredArgsConstructor;
-import org.example.domain.CertificateIssueDTO;
-import org.example.repository.CertificateIssueRepository;
+import com.example.certification.domain.CertificateIssueDTO;
+import com.example.certification.repository.CertificateIssueRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
