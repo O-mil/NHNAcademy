@@ -1,0 +1,10 @@
+
+X	java:S125"<This block of commented-out lines of code should be removed.(Í°èæ8àŸò™€1
+j	java:S100P"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›Üêş8êŸò™€1
+_
+java:S1128	"=Remove this unused import 'com.nhnacademy.board.domain.Post'.(äâØ¤şÿÿÿÿ8ûŸò™€1
+Z
+java:S1128
+"=Remove this unused import 'com.nhnacademy.board.domain.User'.(ë—’î8üŸò™€1
+b
+java:S1128"@Remove this unused import 'com.nhnacademy.board.domain.Visitor'.(¡ÑŒıÿÿÿÿ8üŸò™€1
