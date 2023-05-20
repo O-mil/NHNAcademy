@@ -1,0 +1,15 @@
+POST /household
+Host: localhost:9090
+Content-Type: application/json
+
+{
+  "householdResidentSerialNumber": 10,
+  "householdCompositionDate": "1998-11-13T00:00:00",
+  "householdCompositionReasonCode": "세대분리",
+  "currentHouseMovementAddress": "광주광역시"
+}
+
+###
+
+DELETE /household/2
+Host: localhost:9090
