@@ -47,6 +47,7 @@ public class Resident {
     @Column (name = "death_place_address")
     private String deathPlaceAddress;
 
+
     public void modifyResidentInfo (String name, String registrationBaseAddress, LocalDateTime deathDate, String deathPlaceCode, String deathPlaceAddress) {
 
         if (name != null) {

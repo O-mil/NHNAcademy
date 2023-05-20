@@ -1,6 +1,6 @@
 POST /residents/9/relationship
 Content-Type: application/json
-Host: localhost:8080
+Host: localhost:9090
 
 {
   "familySerialNumber": 3,
@@ -11,7 +11,7 @@ Host: localhost:8080
 
 PUT /residents/9/relationship/3
 Content-Type: application/json
-Host: localhost:8080
+Host: localhost:9090
 
 {
   "familyRelationshipCode": "모"
@@ -20,4 +20,4 @@ Host: localhost:8080
 ###
 
 DELETE /residents/10/relationship/123
-Host: localhost:8080
+Host: localhost:9090
