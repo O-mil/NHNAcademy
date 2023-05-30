@@ -12,4 +12,7 @@ public interface FamilyRelationshipRepository extends JpaRepository<FamilyRelati
 
     @Query("SELECT O FROM FamilyRelationship O where O.pk.familyResidentSerialNumber=?1 and O.pk.baseResidentSerialNumber=?2")
     FamilyRelationship findByPk_FamilyResidentSerialNumberAndPk_BaseResidentSerialNumber(Long familyResidentSerialNumber, Long baseSerialNumber);
+
+    void deleteByPk_FamilyResidentSerialNumberAndPk_BaseResidentSerialNumber(Long familyResidentSerialNumber, Long baseSerialNumber);
+
 }
