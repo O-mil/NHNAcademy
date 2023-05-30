@@ -15,8 +15,6 @@ import javax.persistence.Id;
 @ToString
 @Entity
 public class Account {
-
-
     @Id
     private Long id;
     private String number;
