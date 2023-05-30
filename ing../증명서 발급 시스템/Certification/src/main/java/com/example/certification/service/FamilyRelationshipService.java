@@ -11,6 +11,8 @@ import com.example.certification.repository.ResidentRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Objects;
+
 @Service
 @RequiredArgsConstructor
 @Transactional
@@ -18,6 +20,7 @@ public class FamilyRelationshipService {
 
     private final FamilyRelationshipRepository familyRelationshipRepository;
     private final ResidentRepository residentRepository;
+
 
     public FamilyRelationshipDTO registerFamilyRelationship(Long serialNumber, FamilyRelationshipDTO familyRelationshipDTO) {
 
@@ -42,5 +45,15 @@ public class FamilyRelationshipService {
         familyRelationshipRepository.saveAndFlush(relationship);
 
         return familyRelationshipDTO;
+    }
+
+    public void deleteRelationship(Long familyNumber, Long number){
+        FamilyRelationship relationship = familyRelationshipRepository.findByPk_FamilyResidentSerialNumberAndPk_BaseResidentSerialNumber(familyNumber, number);
+
+        if(Objects.isNull(relationship)){
+            throw new NotFoundResidentException();
+        }
+
+        familyRelationshipRepository.delete(relationship);
     }
 }

@@ -30,4 +30,10 @@ public class FamilyRelationshipController {
         return ResponseEntity.ok(res);
     }
 
+    @DeleteMapping("/{familySerialNumber}")
+    public void deleteRelation(@PathVariable(name="serialNumber")Long serialNumber,
+                               @PathVariable(name="familySerialNumber")Long familySerialNumber) {
+        familyRelationshipService.deleteRelationship(familySerialNumber, serialNumber);
+    }
+
 }
