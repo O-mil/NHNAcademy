@@ -1,13 +1,31 @@
 package com.nhnacademy.springbootstudent;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-@RequiredArgsConstructor
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 @Getter
+@Setter
 @EqualsAndHashCode
+@ToString
+@Entity
 public class Student {
-    private final String name;
-    private final Integer score;
+
+    @Id
+    private Long id;
+    private String name;
+    private Integer score;
+
+
+    public Student() {
+
+    }
+
+    public Student(Long id, String name, Integer score) {
+        this.id = id;
+        this.name = name;
+        this.score = score;
+    }
 }
