@@ -15,7 +15,31 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
+		<activemq.version>5.16.5</activemq.version>
+		<antlr2.version>2.7.7</antlr2.version>
+		<appengine-sdk.version>1.9.98</appengine-sdk.version>
+		<artemis.version>2.19.1</artemis.version>
+		<aspectj.version>1.9.7</aspectj.version>
+		<assertj.version>3.22.0</assertj.version>
+		<atomikos.version>4.0.6</atomikos.version>
+		<awaitility.version>4.2.0</awaitility.version>
 	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot</artifactId>
+				<version>2.7.6</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-web</artifactId>
+				<version>2.7.6</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 
 	<dependencies>
@@ -51,6 +75,26 @@
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+			<version>2.7.6</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-json</artifactId>
+			<version>2.7.6</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<version>2.7.6</version>
+			<scope>compile</scope>
+		</dependency>
 
 	</dependencies>
 
