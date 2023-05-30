@@ -10,10 +10,10 @@ public class SpringBootStudentApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootStudentApplication.class, args);
 	}
-
-	@Bean
-	public String hello() {
-		return "hello, Spring Boot!";
-	}
+//
+//	@Bean
+//	public String hello() {
+//		return "hello, Spring Boot!";
+//	}
 
 }
