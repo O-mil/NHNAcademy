@@ -1,7 +1,10 @@
 package com.nhnacademy.springbootstudent.account;
 
+import org.springframework.stereotype.Component;
+
 import java.util.List;
 
+@Component
 public class DummyAccountRepository implements AccountRepository {
 
     @Override

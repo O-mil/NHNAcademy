@@ -9,7 +9,6 @@ import lombok.RequiredArgsConstructor;
 @Getter
 @EqualsAndHashCode
 public class Account {
-
     private final String number;
     private final Integer balance;
 }

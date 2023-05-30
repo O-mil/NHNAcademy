@@ -20,6 +20,7 @@ class DefaultAccountServiceTest {
     void getAccounts() {
         List< Account> actual = accountService.getAccounts();
 
+        System.out.println(actual);
         assertThat(actual.size()).isEqualTo(2);
     }
 }
