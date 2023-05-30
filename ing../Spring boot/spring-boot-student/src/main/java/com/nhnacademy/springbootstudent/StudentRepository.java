@@ -1,7 +1,12 @@
 package com.nhnacademy.springbootstudent;
 
-import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface StudentRepository {
+import java.util.List;
+import java.util.Optional;
+
+public interface StudentRepository extends JpaRepository<Student, Long> {
     List<Student> findAll();
+
+    Optional<Student> findById(Long id);
 }

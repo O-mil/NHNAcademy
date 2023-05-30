@@ -1,14 +1,11 @@
 package com.nhnacademy.springbootstudent.account;
 
-
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-
 @Component
 public class DefaultAccountService implements AccountService {
-
 
     private final AccountRepository accountRepository;
 

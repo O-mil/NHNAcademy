@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.List;
+import java.util.Optional;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
@@ -12,13 +12,15 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 class NhnStudentServiceTest {
 
     @Autowired
-    StudentService studentService;
+    StudentRepository studentRepository;
 
     @Test
     void testgetStudent() {
-        List<Student> actual = studentService.getStudents();
+        Student kjh = new Student(1L, "김주호", 99);
+        studentRepository.save(kjh);
 
-        System.out.println(actual);
-        assertThat(actual.size()).isEqualTo(2);
+        Optional<Student> actual = studentRepository.findById(1L);
+        assertThat(actual).isPresent();
+        assertThat(actual.get()).isEqualTo(kjh);
     }
 }
