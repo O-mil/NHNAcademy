@@ -1,0 +1,28 @@
+POST /residents/death
+Host: localhost:9090
+Content-Type: application/json
+
+{
+  "residentSerialNumber": 3,
+  "birthDeathTypeCode": "사망",
+  "birthDeathReportDate": "1998-11-13T00:00:00",
+  "deathReportQualificationsCode": "자",
+  "emailAddress": "nhn@academy.com",
+  "phoneNumber": "010-1234-5678"
+}
+
+###
+
+PUT /residents/death/3
+Host: localhost:9090
+Content-Type: application/json
+
+{
+  "emailAddress": "test@test.com",
+  "phoneNumber": "010-1234-5678"
+}
+
+###
+
+DELETE /residents/death/3
+Host: localhost:9090

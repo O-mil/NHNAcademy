@@ -1,0 +1,25 @@
+POST /household/3/movement HTTP/1.1
+Host: localhost:9090
+Content-Type: application/json
+
+{
+  "houseMovementReportDate": "2009-10-02",
+  "houseMovementAddress": "경기도 성남시 분당구 대왕판교로 645번길",
+  "lastAddressYn" : "n"
+}
+
+###
+
+PUT /household/3/movement/20091002 HTTP/1.1
+Host: localhost:9090
+Content-Type: application/json
+
+{
+  "houseMovementAddress": "광주"
+}
+
+###
+
+DELETE /household/3/movement/20091002 HTTP/1.1
+Host: localhost:9090
+

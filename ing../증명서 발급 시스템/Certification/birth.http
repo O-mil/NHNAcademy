@@ -1,0 +1,28 @@
+POST /residents/7/birth
+Host: localhost:9090
+Content-Type: application/json
+
+{
+  "residentSerialNumber": 10,
+  "birthDeathTypeCode": "출생",
+  "birthDeathReportDate": "1998-11-13T00:00:00",
+  "birthReportQualificationsCode": "부",
+  "emailAddress": "nhn@yoonmin.com",
+  "phoneNumber": "010-1234-5678"
+}
+
+###
+
+PUT /residents/7/birth/10
+Host: localhost:9090
+Content-Type: application/json
+
+{
+  "emailAddress": "test@test.com",
+  "phoneNumber": "010-1234-5678"
+}
+
+###
+
+DELETE /residents/7/birth/10
+Host: localhost:9090
