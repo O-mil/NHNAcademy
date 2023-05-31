@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RequiredArgsConstructor
-@Controller
+@RestController
 public class StudentController {
     private final StudentService studentService;
 
@@ -22,12 +22,6 @@ public class StudentController {
     @GetMapping("/students/{id}")
     public Student getStudent(@PathVariable Long id) {
         return studentService.getStudent(id);
-    }
-
-    @GetMapping("/web/students/{id}")
-    public String getStudent(@PathVariable Long id, Model model) {
-        model.addAttribute("student", new Student(3L, "김화정", 100));
-        return "student";
     }
 
     @PostMapping("/students")
