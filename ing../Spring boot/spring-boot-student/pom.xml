@@ -82,6 +82,10 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+
 			<artifactId>spring-boot-starter</artifactId>
 			<version>2.7.6</version>
 			<scope>compile</scope>
@@ -100,6 +104,7 @@
 			<version>2.7.6</version>
 			<scope>compile</scope>
 		</dependency>
+
 
 	</dependencies>
 
