@@ -1,0 +1,59 @@
+###
+POST http://localhost:8888/students
+Content-Type: application/json
+
+{
+  "id": 6,
+  "name": "eyol",
+  "score": 100
+}
+
+###
+GET http://localhost:8888/students/2
+Content-Type: application/json
+
+
+
+###
+DELETE http://localhost:8888/students/7
+Content-Type: application/json
+
+
+
+
+###
+###
+GET http://localhost:9090/system/version
+Content-Type: application/json
+
+
+
+###
+GET http://localhost:9090/student-name
+Content-Type: application/json
+
+
+
+###
+
+###
+GET http://localhost:9090/web/students/3
+Content-Type: application/json
+
+###
+
+
+
+
+
+POST http://127.0.0.1:9090/management/fail
+Content-Type: application/json
+
+
+###
+
+POST http://127.0.0.1:9090/management/recover
+Content-Type: application/json
+
+
+###
