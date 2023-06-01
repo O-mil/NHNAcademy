@@ -29,7 +29,7 @@ class AccountRepositoryTest {
         Account actual = accountRepository.findById(5L).orElse(null);
 
         assertThat(actual).isEqualTo(account);
-    }
+    }   // 다 찾음
 
     @Test
     void testFindById() {
@@ -41,7 +41,7 @@ class AccountRepositoryTest {
         assertThat(optionalAccount.isPresent()).isTrue();
         assertThat(optionalAccount.get().getNumber()).isEqualTo("Test Account");
         assertThat(optionalAccount.get().getBalance()).isEqualTo(1000);
-    }
+    }   //아이디 맞으면 데려옴
 
     @Test
     void testSave() {
