@@ -16,7 +16,7 @@ public class PropertiesConfig {
     @Value("#{'${excludeUrls}'.split(',')}")
     private Set<String> excludeUrls;
 
-    @Value("/Users/yoonmin/Desktop/java_backend/backend-study/JDBC/5.4_/board_task/board/src/main/upload")
+    @Value("/Users/kimhwajeong/Code/GitHub/NHNAcademy/Class/Project/게시판/Board/src/main/upload")
     public String uploadPath;
 
     public Set<String> getExcludeUrls() { return excludeUrls;}

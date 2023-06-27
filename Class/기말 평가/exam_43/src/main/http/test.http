@@ -1,0 +1,69 @@
+### 5.department 등록
+POST http://localhost:8080/departments
+Content-Type: application/json
+X-USER-ID:nhnacademy
+
+{
+  "departmentCode":"CS0001",
+  "departmentName":"고객서비스1팀"
+}
+
+
+### 5. department 조회
+GET http://localhost:8080/departments/CS0001
+X-USER-ID:nhnacademy
+
+
+### 5. department 수정
+PUT http://localhost:8080/departments/CS0001
+Content-Type: application/json
+X-USER-ID:nhnacademy
+
+{
+  "departmentName" : "CS1팀"
+}
+
+
+### 5. department 삭제
+DELETE http://localhost:8080/departments/CS0001
+X-USER-ID:nhnacademy
+
+
+### 5. department 아이디 중복체크
+POST http://localhost:8080/departments
+Content-Type: application/json
+X-USER-ID:nhnacademy
+
+{
+  "departmentCode" : "CS0001",
+  "departmentName" : "고객서비스1팀"
+}
+
+
+### 5. department not found
+GET http://localhost:8080/departments/CS0002
+X-USER-ID:nhnacademy
+
+
+### 6. 부서조회
+GET http://localhost:8080/department-members?departmentCode=CS001
+Accept: application/json
+X-USER-ID: nhnacademy
+
+
+### 6. Exception - Missing Parameter
+GET http://localhost:8080/department-members
+Accept:application/json
+X-USER-ID:nhnacademy
+
+
+### 6. Exception - Empty Parameter
+GET http://localhost:8080/department-members?departmentIds=
+Accept:application/json
+X-USER-ID:nhnacademy
+
+
+### 7. Content negotiation
+GET http://localhost:8080/departments/CS0001
+Accept:application/xml
+X-USER-ID:nhnacademy
